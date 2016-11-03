@@ -72,9 +72,9 @@
       display: flex;
       flex-direction: column;
       width: 50%;
-      margin:0 auto;
+      margin: 0 auto;
       box-shadow: 0 0 3px #ded6c4;
-      padding: 1em;
+      padding: 1em 1em 0 1em;
       background: white;
     }
     .main header {
@@ -89,6 +89,7 @@
     }
     .main-wrapper {
       padding-top: 12.5px;
+      padding-bottom: 12.5px;
       margin-top: 12.5px;
       border-top: 1px solid #e7e1df;
       display: flex;
@@ -144,11 +145,17 @@
       margin-top: 0.5em;
     }
     footer {
-      background: #d8c293;
       flex-flow: column wrap;
+    }
+    .footer-thumbs {
+      background: #d8c293;
+      width: 100%;
+      padding-left: 2em;
+      border-top: #ada28b;
     }
     .footer-thumbs ul {
       display: flex;
+      margin-left: 0.5em;
     }
     .footer-thumbs ul li {
       list-style-type: none;
@@ -254,15 +261,15 @@
           </div>
         </aside>
       </section>
-    </section>
-    <footer class="foot">
-      <div class="footer-thumbs">
+      <section class="footer-thumbs">
         <ul>
           <li><img src="images/foot1.png" alt=""></li>
           <li><img src="images/foot2.png" alt=""></li>
           <li><img src="images/foot3.png" alt=""></li>
         </ul>
-      </div>
+      </section>
+    </section>
+    <footer class="foot">
       <div class="copyright">cmm.com</div>
     </footer>
   </div>
