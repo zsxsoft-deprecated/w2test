@@ -134,6 +134,7 @@
       border-top: 1px solid #e7e1df;
       display: flex;
       flex-direction: row;
+      padding-bottom: 2em;
     }
     .main-wrapper section {
       flex: 1 70%;
@@ -186,12 +187,13 @@
     }
     footer {
       flex-flow: column wrap;
-    }
-    .footer-thumbs {
-      background: #d8c293;
       width: 100%;
       padding-left: 2em;
+      background: #d8c293;
       border-top: #ada28b;
+    }
+    .footer-thumbs {
+      margin-left: -4em;
     }
     .footer-thumbs ul {
       display: flex;
@@ -227,6 +229,8 @@
       font-size: 2em;
       font-weight: bold;
       border-top: 1px solid #918161;
+      margin-left: -1em;
+      padding-right: 1em;
     }
     .media-responsive {
       max-width: 100%;
@@ -305,17 +309,18 @@
           </div>
         </aside>
       </section>
-      <section class="footer-thumbs">
-        <ul>
-          <li><img src="images/foot1.png" alt=""></li>
-          <li><img src="images/foot2.png" alt=""></li>
-          <li><img src="images/foot3.png" alt=""></li>
-        </ul>
-      </section>
+
+      <footer class="foot">
+        <section class="footer-thumbs">
+          <ul>
+            <li><img src="images/foot1.png" alt=""></li>
+            <li><img src="images/foot2.png" alt=""></li>
+            <li><img src="images/foot3.png" alt=""></li>
+          </ul>
+        </section>
+        <div class="copyright">cmm.com</div>
+      </footer>
     </section>
-    <footer class="foot">
-      <div class="copyright">cmm.com</div>
-    </footer>
   </div>
 </body>
 </html>
