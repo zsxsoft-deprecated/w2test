@@ -22,7 +22,7 @@
     }
     .head {
       border-bottom: 1px solid #c6a661;
-      border-top: 3px solid #c3a76a;
+      border-top: 5px solid #c3a76a;
     }
     .head, .foot {
       display: flex;
@@ -86,6 +86,28 @@
     .header-daily {
       border-left: 1px solid white;
       padding-left: 1em;
+    }
+    .header-title-image {
+      border: 3px solid #d9cdb2;
+      position: relative;
+      height: 159px;
+      width: 460px;
+    }
+    .header-title-image:before, .header-title-image:after {
+      background: url(images/arrow.png);
+      background-size: cover;
+      content: '';
+      width: 2.5em;
+      height: 2em;
+      float: left;
+      position: absolute;
+      top: 45%;
+      cursor: pointer;
+    }
+    .header-title-image:after {
+      float: right;
+      right: 0;
+      transform: rotate(-180deg);
     }
     .main-wrapper {
       padding-top: 12.5px;
@@ -190,6 +212,7 @@
     }
     .media-responsive {
       max-width: 100%;
+      height: 100%;
     }
   </style>
 </head>
