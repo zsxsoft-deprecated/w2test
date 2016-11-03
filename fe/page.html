@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Who's Blog</title>
+  <style>
+    html {
+      height: 100%;
+    }
+    html, body {
+      background: #f6f0e2;
+      color: #6e6758;
+      width: 100%;
+      font-family: Dengxian, Microsoft Yahei;
+      margin: 0;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      flex-flow: column;
+      width: 100%;
+    }
+    .head {
+      border-bottom: 1px solid #c6a661;
+      border-top: 3px solid #c3a76a;
+    }
+    .head, .foot {
+      display: flex;
+      align-items: center;
+    }
+    .head {
+      flex: 0 0 50px;
+      background: #e8c271;
+      flex-flow: row wrap;
+    }
+    .head-wrapper {
+      display: flex;
+      width: 50%;
+      margin: 0 auto;
+    }
+    .head .logo {
+      flex: 1 200px;
+      color: #ffffff;
+      font-size: 2em;
+      transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-14deg, 0deg);
+      font-weight: bold;
+      margin-top: 5px;
+      opacity: 0.7;
+    }
+    .head nav {
+      flex: 2;
+    }
+    .head nav ul {
+      align-items: center;
+      position: absolute;
+      float: right;
+      margin-top: 25px;
+      background: #e9d09b;
+      padding: 5px 10px 5px 10px;
+      border-radius: 5px;
+      color: #fffcf4;
+      text-shadow: 0 0 1px white;
+      box-shadow: 0 0 3px white;
+    }
+    .head nav ul li {
+      list-style-type: none;
+      display: inline-block;
+      padding: 0.2em 0.5em 0.2em 0.5em;
+    }
+    .main {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin:0 auto;
+      box-shadow: 0 0 3px #ded6c4;
+      padding: 1em;
+      background: white;
+    }
+    .main header {
+      display: flex;
+      background: #e7e0ce;
+      border: 5px solid #f9f5ed;
+      border-radius: 5px;
+    }
+    .header-daily {
+      border-left: 1px solid white;
+      padding-left: 1em;
+    }
+    .main-wrapper {
+      padding-top: 12.5px;
+      margin-top: 12.5px;
+      border-top: 1px solid #e7e1df;
+      display: flex;
+      flex-direction: row;
+    }
+    .main-wrapper section {
+      flex: 1 70%;
+    }
+    .main-wrapper aside {
+      flex: 2;
+    }
+    article {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 10px;
+      border-right: 1px solid #e7e1df;
+    }
+    article .article-thumb {
+      width: 92.5px;
+      height: 92.5px;
+      border: 3px solid #ffffbe;
+      box-shadow: 0px 0px 0px 1px #ada48f;
+      flex: 0 0 92.5px;
+      background-size: cover;
+    }
+    article .article-thumb-1 {
+      background-image: url(images/article1.png);
+    }
+    article .article-thumb-2 {
+      background-image: url(images/article2.png);
+    }
+    article .article-thumb-3 {
+      background-image: url(images/article3.png);
+    }
+    article .article-content {
+      padding-left: 20px;
+    }
+    article .article-content h3 {
+      margin-bottom: -0.5em;
+    } 
+    aside {
+      padding-left: 20px;
+    }
+    aside .module input[type="text"] {
+      background: #fcf9f4;
+      border: 1px solid #e0dace;
+    }
+    aside .module ul {
+      padding-left: 1em;
+    }
+    aside .module ul li {
+      margin-top: 0.5em;
+    }
+    footer {
+      background: #d8c293;
+      flex-flow: column wrap;
+    }
+    .footer-thumbs ul {
+      display: flex;
+    }
+    .footer-thumbs ul li {
+      list-style-type: none;
+      padding-right: 15px;
+    }
+    .footer-thumbs ul li::after {
+      display: inline-block;
+      content: "";
+      background: url(images/border-right.png);
+      height: 90px;
+      width: 1px;
+      margin-left: 15px;
+      background-size: contain;
+    }
+    .footer-thumbs ul li:last-child:after {
+      display: none;
+    }
+    .footer-thumbs ul li img {
+      width: 145px;
+      height: 103px;
+    }
+    .copyright {
+      background: #b3a078;
+      color: #867859;
+      width: 100%;
+      text-align: center;
+      padding-top: 0.2em;
+      padding-bottom: 0.2em;
+      font-size: 2em;
+      font-weight: bold;
+      border-top: 1px solid #918161;
+    }
+    .media-responsive {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="head">
+      <div class="head-wrapper">
+        <div class="logo">CMM's BLOG</div>
+        <nav>
+          <ul>
+            <li>主页</li>
+            <li>日志</li>
+            <li>相册</li>
+            <li>家园</li>
+            <li>关于</li>
+          </ul>  
+        </nav>
+      </div>
+    </header>
+    <section class="main">
+      <header>
+        <div class="header-title-image">
+          <img src="images/header.png" class="media-responsive" />
+        </div>
+        <div class="header-daily">
+          <h3>每日一句</h3>
+          <p>想到和得到中间还有两个字，那就是做到。</p>
+        </div>
+      </header>
+      <section class="main-wrapper">
+        <section>
+          <article>
+            <div class="article-thumb article-thumb-1"></div>
+            <div class="article-content">
+              <h3>根草</h3>
+              <p>这是一个长满了百合花的峡谷。百合花静静地开放着，水边、坡上、岩石旁、大树下，到处都有。它们不疯不闹，也无鲜艳的颜色，仿佛它们开放着，也就是开放着......</p>
+            </div>
+          </article>
+          <article>
+            <div class="article-thumb article-thumb-2"></div>
+            <div class="article-content">
+              <h3>小王子</h3>
+              <p>很大很大的花蕾，小王子感觉到从这个花苞中一定会出现一个奇迹。然而这朵花藏在它那绿茵茵的房间中用了很长的时间来打扮自己。她精心选择着她将来的颜色......</p>
+            </div>
+          </article>
+          <article>
+            <div class="article-thumb article-thumb-3"></div>
+            <div class="article-content">
+              <h3>梦</h3>
+              <p>变幻的云朵，悠悠的从我的头上飘过。我重又看见，在童年的幻觉中出现过的神话：骏马拖着的彩车，飘飘欲仙的美女，富丽堂皇的宫殿……我在心突然变得甜蜜......</p>
+            </div>
+          </article>
+        </section>
+        <aside>
+          <div class="module">
+            <h3>搜索</h3>
+            <input type="text">
+          </div>
+          <div class="module">
+            <h3>文章</h3>
+            <ul>
+              <li>夜</li>
+              <li>蒲公英</li>
+              <li>一人路上</li>
+              <li>杂思</li>
+              <li>山高不过天</li>
+              <li>对未来的自己</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </section>
+    <footer class="foot">
+      <div class="footer-thumbs">
+        <ul>
+          <li><img src="images/foot1.png" alt=""></li>
+          <li><img src="images/foot2.png" alt=""></li>
+          <li><img src="images/foot3.png" alt=""></li>
+        </ul>
+      </div>
+      <div class="copyright">cmm.com</div>
+    </footer>
+  </div>
+</body>
+</html>

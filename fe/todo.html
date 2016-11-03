@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TODO List</title>
+</head>
+<body>
+<ul id="todo"></ul>
+<button class="button button-add">[+]</button>
+<script>
+(() => {
+  // Ignore performance
+  const $ = document.querySelector.bind(document);
+  const ul = $("#todo");
+  const modifyFunction = function () {
+    this.parentElement.childNodes[0].innerText = prompt('New Item');
+  };
+  const deleteFunction = function () {
+    this.parentElement.remove();
+  };
+  $(".button-add").addEventListener('click', () => {
+    const modifySpan = document.createElement("a");
+    const deleteSpan = document.createElement("a");
+    const li = document.createElement("li");
+    li.innerHTML = `<span>${prompt("New Item?")}</span>`;
+    modifySpan.addEventListener('click', modifyFunction);
+    modifySpan.innerText = '[M]';
+    modifySpan.href = 'javascript:;';
+    deleteSpan.addEventListener('click', deleteFunction);
+    deleteSpan.innerText = '[X]';
+    deleteSpan.href = 'javascript:;';
+    li.appendChild(modifySpan);
+    li.appendChild(deleteSpan);
+    ul.appendChild(li);
+  })
+
+})();
+</script>
+</body>
+</html>
