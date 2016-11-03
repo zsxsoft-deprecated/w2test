@@ -34,18 +34,35 @@
       flex-flow: row wrap;
     }
     .head-wrapper {
+
       display: flex;
       width: 50%;
       margin: 0 auto;
     }
     .head .logo {
-      flex: 1 200px;
       color: #ffffff;
       font-size: 2em;
       transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-14deg, 0deg);
       font-weight: bold;
       margin-top: 5px;
       opacity: 0.7;
+      text-shadow: 1px 2px 2px #888;
+    }
+    .logo-wrapper {
+      flex: 1 200px;
+      position: relative;
+    }
+    .logo-wrapper .logo-circle {
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      background: radial-gradient(30px at 60px 50%, white, transparent);
+      background-position: 1em;
+      background-repeat: no-repeat;
+      border-radius: 50px;
+      top: -2em;
+      left: 2em;
+      opacity: 0.5;
     }
     .head nav {
       flex: 2;
@@ -66,6 +83,7 @@
       list-style-type: none;
       display: inline-block;
       padding: 0.2em 0.5em 0.2em 0.5em;
+      text-shadow: -1px 2px 2px #a79b83;
     }
     .main {
       align-items: center;
@@ -220,7 +238,10 @@
   <div class="wrapper">
     <header class="head">
       <div class="head-wrapper">
-        <div class="logo">CMM's BLOG</div>
+        <div class="logo-wrapper">
+          <div class="logo">CMM's BLOG</div>
+          <div class="logo-circle"></div>
+        </div>
         <nav>
           <ul>
             <li>主页</li>
